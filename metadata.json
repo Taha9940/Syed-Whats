@@ -1,0 +1,11 @@
+{
+  "name": "SYED",
+  "description": "Modern, secure, and fast private communication platform featuring private messaging, complete multi-file sharing, groups, 24h temporary status, voice/video calling, and username/UID discovery.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #16324F;
+    --accent: #16B8A6;
+    --bg-light: #F7F9FC;
+    --bg-dark: #101820;
+    --text-primary: #17212B;
+  }
+}
+
+/* Custom scrollbar for chat history */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 160, 180, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(140, 160, 180, 0.5);
+}
+
+/* Audio waveform animation */
+@keyframes audio-wave {
+  0%, 100% { height: 4px; }
+  50% { height: 22px; }
+}
+
+.animate-audio-bar {
+  animation: audio-wave 1s ease-in-out infinite;
+}
+
+/* Radar pulse animation for calling */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: radar-pulse 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
