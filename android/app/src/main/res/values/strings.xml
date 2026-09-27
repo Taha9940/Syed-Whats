@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SYED</string>
+    <string name="title_activity_main">SYED</string>
+    <string name="package_name">com.syed.app</string>
+    <string name="custom_url_scheme">com.syed.app</string>
+</resources>
